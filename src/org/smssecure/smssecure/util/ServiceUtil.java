@@ -2,6 +2,7 @@ package org.smssecure.smssecure.util;
 
 import android.app.Activity;
 import android.app.NotificationManager;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.media.AudioManager;
 import android.net.ConnectivityManager;
@@ -32,5 +33,9 @@ public class ServiceUtil {
 
   public static AudioManager getAudioManager(Context context) {
     return (AudioManager)context.getSystemService(Context.AUDIO_SERVICE);
+  }
+
+  public static ClipboardManager getClipboardManager(Context context) {
+    return (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
   }
 }
